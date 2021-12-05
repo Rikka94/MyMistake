@@ -25,9 +25,11 @@
                 <img class="icon" src="Fonts/bars.svg" />
             </div>
             <nav id="sideBar">
+                <button onclick="topFunction()" id="toTopBtn"></button>
                 <a class="socialIcons" href="https://twitter.com/Aammriee" target="_blank"><img class="icon" src="Fonts/twitter.svg" /></a>
                 <a class="socialIcons" href="https://www.youtube.com/watch?v=iik25wqIuFo&ab_channel=Rickroll%2Cbutwithadifferentlink" target="_blank"><img class="icon" src="Fonts/youtube.svg" /></a>
                 <a class="socialIcons" href="https://www.opendota.com/players/129165666" target="_blank"><img class="icon" src="Fonts/gamepad.svg" /></a>
+                <a class="socialIcons" href="https://www.facebook.com/amri94" target="_blank"><img class="icon" src="Fonts/facebook.svg" /></a>
             </nav>
         </header>
         <section>
@@ -73,26 +75,43 @@
                         <input id="guessMusic" type="text" placeholder="It can't be that hard?"/>
                         <br />
                         <button type="submit">Submit Music Name</button>
-                        <audio id="music" src="music/Rudolf_Buchbinder_Fur_Elise.mp3" type="audio.mp3" controls onloadstart="this.volume=0.25">
+                        <audio id="music" src="music/Rudolf_Buchbinder_Fur_Elise.mp3" type="audio.mp3"">
                         </audio>
-                        <div id="musicBox">
-                            
-                            <button class="musicBtn">Play</button>
-                            <button class="musicBtn">Pause</button>
-                            <button class="musicBtn">Reset</button>
-                            <button class="musicBtn">+</button>
-                            <button class="musicBtn">-</button>
-                            <br />
-                            <button class="musicBtn">Previous</button>
-                            <button class="musicBtn">Next</button>
+                        <div class="musicBox">
+                            <button onClick="playMusic()" class="musicBtn">Play</button>
+                            <button onClick="pauseMusic()" class="musicBtn">Pause</button>
+                            <button onClick="resetMusic()" class="musicBtn">Reset</button>
+                            <button onClick="volMusic(0.05)" class="musicBtn">+</button>
+                            <button onClick="volMusic(-0.05)" class="musicBtn">-</button>
+                        </div>
+                        <div class="musicBox">
+                            <button class="musicBtnTwo">Previous</button>
+                            <button class="musicBtnTwo">Next</button>
                         </div>
                     </div>
                     
                 </div>
+                <div id="midBody">
+                    <div class="empty"></div>
+                    <h1>Or maybe a good highlight of the plays i did.</h1>
+                    <hr style="width: 400px; border: 1px solid whitesmoke;"/>
+                    <video id="vidHigh" src="images/rubick steal.mp4" type="video.mp4" controls " >
+                    </video>
+                    
+                    <div id="vidBox">
+                        <button class="musicBtnTwo">Previous</button>
+                        <button class="musicBtnTwo">Next</button>
+                    </div>  
+                </div>
             </div>
             <hr style="width: 100%; border: 1px solid whitesmoke;"/>
             <div id="special">
-
+                
+                <div id="specTop">
+                    <h1>Let me talk about myself abit. I never had goal. I wanted to be many things in life. A screenwriter. A forensics scientist. A cop.</h1>
+                    <br />
+                    <h1>I even wanted to tryout streaming. Go ahead look for the link to my facebook gaming page. The URL is somewhere around here. Consider this an easter egg.</h1>
+                </div>
             </div>
         </section>
         <script src="main.js"></script>

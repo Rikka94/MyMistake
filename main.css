@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html, body{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     background-color: lightgray;
     font-family: 'Courier New', Courier, monospace;
     margin: 0 auto;
+}
+h1{
+    font-size: 20px;
 }
 header{
     width: 100%;
@@ -111,6 +115,18 @@ nav ul{
     right: 0;
     transition: 0.7s;
 }
+#toTopBtn{
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    background-image: url(Fonts/arrow-alt-circle-up.svg);
+    cursor: pointer;
+    margin: 25px;
+    transition: 0.5s;
+}
+#toTopBtn:hover{
+    transform: scale(1.25);
+}
 .socialIcons:hover{
     transform: scale(1.3);
 }
@@ -121,7 +137,7 @@ nav ul{
     /* background-color: tomato; */
     background-image: url(images/top.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: center;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -200,10 +216,10 @@ nav ul{
 }
 #midBox{
     width: 100%;
-    height: 1000px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-image: url(images/mid.jpg);
     background-position: center;
@@ -223,6 +239,30 @@ nav ul{
     align-items: center;
     color: white;
     text-align: center;
+}
+#midBody{
+    width: 800px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+#vidHigh{
+    width: 600px;
+    height: 340px;
+    border: 2px solid white;
+
+}
+#vidBox{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 #musicPlay{
     width: 600px;
@@ -254,9 +294,9 @@ nav ul{
     border-radius: 25px;
    
 }
-#musicBox{
+.musicBox{
     width: 450px;
-    height: 300px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -274,9 +314,36 @@ nav ul{
     justify-content: space-around;
     align-items: center;
     color: white;
+    
 }
+.musicBtnTwo{
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 40px;
+    background-image: linear-gradient(to bottom, red, rgb(20, 20, 20));
+    color: white;
+}
+
 .musicBtn:hover{
     box-shadow: 3px 3px 10px lightgrey;
+    background-image: linear-gradient(to top, rgb(20, 20, 20), rgb(20, 20, 20));
+}
+.musicBtnTwo:hover{
+    box-shadow: 3px 3px 10px lightgrey;
+    background-image: linear-gradient(to top, rgb(20, 20, 20), rgb(20, 20, 20));
+}
+#special{
+    width: 100%;
+    height: 1200px;
+    background-color: seagreen;
+}
+#specTop{
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+
 }
 section{
     max-width: 100%;
@@ -308,5 +375,13 @@ section{
     #meImg{
         margin-bottom: 0px;
     }
-    
+    #midBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    h1{
+        font-size: 25px;
+    }
 }
