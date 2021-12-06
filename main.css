@@ -15,7 +15,7 @@ h1{
     font-size: 20px;
 }
 header{
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     height: 65px;
     border: 2px solid white;
@@ -28,7 +28,7 @@ header{
     background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(219, 219, 219));
 }
 #navHead{
-    width: 750px;
+    max-width: 750px;
     height: 40px;
     /* border: 2px solid pink; */
     display: flex;
